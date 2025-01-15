@@ -1,0 +1,8 @@
+To start mongodb/brew/mongodb-community now and restart at login:
+brew services start mongodb/brew/mongodb-community
+
+You can verify if the service has stopped by running:
+brew services list
+
+stop mongodb service:
+brew services stop mongodb/brew/mongodb-community
