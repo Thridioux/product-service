@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/product")
+@RequestMapping("/api/product/")
 @RequiredArgsConstructor
 
 public class ProductController {
@@ -29,8 +29,9 @@ public class ProductController {
     
         return productService.createProduct(productRequest);
     }
-
-    @GetMapping
+   
+    
+    @GetMapping("/all")
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts() { // get all products method
         

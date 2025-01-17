@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-@Slf4j
+@Slf4j // log the product created successfully
 public class ProductService {
     private final ProductRepository productRepository;
 
@@ -35,5 +35,4 @@ public class ProductService {
             .map(product -> new ProductResponse(product.getId(), product.getName(), product.getDescription(), product.getPrice()))
             .toList();
     }
-
 }
